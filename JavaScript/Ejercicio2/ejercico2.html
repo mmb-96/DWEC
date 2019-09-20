@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h3>Número total de empleados: <span id="contador"></span></h3>
+    <table border="1px" id="table">
+        <tr>
+            <td>Número de empleado</td>
+            <td>DNI</td>
+            <td>Nombre</td>
+            <td>Apellidos</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td id="dni">77332344K</td>
+            <td>María</td>
+            <td>Pérez Izquierdo</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td id="dni">23445677J</td>
+            <td>Javier</td>
+            <td>López Martínez</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td id="dni">12345678H</td>
+            <td>Manuel</td>
+            <td>Sánchez Martos</td>
+        </tr>
+    </table>
+    <br>
+    <input type="submit" onclick="newEmpleado();" value="Insertar nuevo empleado">
+    <input type="submit" onclick="delEmpleado();" value="Borra un empleado">
+    <input type="submit" onclick="modEmpleado();" value="Modifica un empleado">
+    <script src="ejercico2.js"></script>
+</body>
+</html>
