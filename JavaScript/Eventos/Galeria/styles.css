@@ -1,0 +1,20 @@
+.gallery_item {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.gallery_item:hover {
+    cursor: pointer;
+}
+
+.red {
+    background: red;
+}
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
