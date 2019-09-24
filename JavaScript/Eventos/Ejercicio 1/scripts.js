@@ -32,7 +32,8 @@ text.addEventListener("keyup" ,() =>{
 //Ejercicio 3
 let cadena;
 
-const escrito = () => {
+const  button = document.getElementById("boton");
+button.addEventListener('click', () => {
     const text = document.getElementById("text2");
     text.addEventListener("keyup" ,() =>{
         let letra = event.key;
@@ -43,11 +44,5 @@ const escrito = () => {
         }
         console.log(letra)
         console.log(cadena);
-    })
-    
-};
-
-const  button = document.getElementById("boton");
-button.addEventListener('click', () => {
-    escrito();
+    });
 });
