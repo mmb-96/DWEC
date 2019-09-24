@@ -33,7 +33,8 @@ text.addEventListener("keyup" ,() =>{
 let cadena;
 
 const  button = document.getElementById("boton");
-button.addEventListener('click', () => {
+button.addEventListener('click', (e) => {
+    e.preventDefault()
     const text = document.getElementById("text2");
     text.addEventListener("keyup" ,() =>{
         let letra = event.key;
