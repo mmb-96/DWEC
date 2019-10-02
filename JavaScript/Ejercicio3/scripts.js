@@ -14,33 +14,26 @@ function horas() {
   hora.innerHTML = horaCompleta.toLocaleTimeString();
 };
 
-
-console.log(date.getTimezoneOffset());
-console.log(date.getTime());
-
 const activar = document.getElementById("activar");
 activar.addEventListener("click", () => {
     let hora = document.getElementById("horaSonar").value;
     let min = document.getElementById("minSonar").value;
-    let sonar;
     let horaSonar = hora - date.getHours();
     let minSonar = min - date.getMinutes();
     let opt;
-    do {
-        minSonar = minSonar * 60000;
+    minSonar = minSonar * 60000;
     horaSonar = horaSonar * 3600000;
-
-    console.log(minSonar)
-    sonar = setInterval(() => {
-            opt = confirm("Sonando la alarma, si deseas dormir 2 minutos más cancela. Si deseas desactivar la alarma acepta");
-
-    }, minSonar + horaSonar);
-    if (opt != true) {
-        minSonar = 120000;
-    }else {
-        opt.removeEventListener();
-    }
-    console.log(opt)
-    } while (opt == true);
+  
     
+       let sonar = setInterval(() => {
+            opt = confirm("Sonando la alarma, si deseas dormir 2 minutos más cancela. Si deseas desactivar la alarma acepta");
+            if (opt == true) {
+                clearInterval(sonar);
+            }else if (opt == false){
+                setTimeout(() => {
+                    alert("Hora de levantarse");
+                }, 120000);
+                clearInterval(sonar);
+            }
+        }, minSonar + horaSonar);
 });
