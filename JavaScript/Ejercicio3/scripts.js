@@ -16,11 +16,13 @@ function horas() {
 
 const activar = document.getElementById("activar");
 activar.addEventListener("click", () => {
+
     let hora = document.getElementById("horaSonar").value;
     let min = document.getElementById("minSonar").value;
     let horaSonar = hora - date.getHours();
     let minSonar = min - date.getMinutes();
     let opt;
+
     minSonar = minSonar * 60000;
     horaSonar = horaSonar * 3600000;
   
