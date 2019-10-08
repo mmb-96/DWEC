@@ -10,10 +10,10 @@ const getUser = (id, cb) => {
 
 getUser(1,(err,user) => {
     if(err) return console.log(err)
-    else console.log ('User name is ' + user.name)
+    console.log ('User name is ' + user.name)
 })
 
 getUser(2,(err,user) => {
     if(err) return console.log(err)
-    else console.log ('User name is ' + user.name)
+    console.log ('User name is ' + user.name)
 })

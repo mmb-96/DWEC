@@ -35,6 +35,6 @@ button.addEventListener("click", () => {
     let idUser = document.getElementById("idUser").value;
     getUser(idUser,(err,user) => {
         if(err) return console.log(err)
-        else console.log ('El usuario con id ' + idUser +' es ' + user.name)
+        console.log ('El usuario con id ' + idUser +' es ' + user.name)
     });
 });
