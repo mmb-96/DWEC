@@ -1,5 +1,5 @@
 //AJAX-JSON
-/*const button = document.getElementById("button")
+const button = document.getElementById("button")
 button.addEventListener('click', () => {
     let xhr;
     if (window.XMLHttpRequest) xhr = new XMLHttpRequest()
@@ -19,11 +19,11 @@ button.addEventListener('click', () => {
 
     xhr.send();
     button.disabled = true;
-});*/
+});
 
-const button = document.getElementById("button")
-button.addEventListener('click', () => {
-    const lista = document.getElementById("lista");
+const button2 = document.getElementById("button2")
+button2.addEventListener('click', () => {
+    const lista = document.getElementById("lista2");
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(res => res.ok ? Promise.resolve(res) : Promise.reject(res))
     .then(res => res.json())
