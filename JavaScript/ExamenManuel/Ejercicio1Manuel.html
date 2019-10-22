@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 1 - Examen Manuel</title>
+</head>
+<body>
+    <form>
+        Nickname:<input type="text" id="user"/><br>
+        Nombre: <input type="text" id="name"/><br>
+        Contraseña: <input type="text" id="password"/><br>
+        DNI: <input type="text" id="dni"/><br>
+        Edad: <input type="text" id="edad"/><br>
+        <button type="submit" id="alta">Registra usuario</button>
+        <button type="submit" id="borrarTodo">Borrar datos</button>
+        <button type="submit" id="consultarUsuario">Consultar usuario</button>
+        <button type="submit" id="consultarUltimoLogin">Consultar último login</button>
+    </form>
+    <br>
+    <br>
+    <table id="tabla" border="1px" style="visibility: hidden;">
+        <tr>
+            <td>Nombre</td>
+            <td>Contraseña</td>
+            <td>DNI</td>
+            <td>Edad</td>
+        </tr>
+    </table>
+    <br>
+    <div id="parrafo">
+    </div>
+    <script src="Ejercicio1ManuelJS.js"></script>
+</body>
+</html>
