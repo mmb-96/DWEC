@@ -9,7 +9,7 @@ button.addEventListener('click', (e) => {
 });
 
 const getData = (ID) => {
-    if (ID == 0) {
+    if (ID == null) {
         let alignmentArray = [];
         fetch("marvel.php")
         .then(res => res.ok ? Promise.resolve(res) : Promise.reject(res))
@@ -27,7 +27,6 @@ const getData = (ID) => {
             }
         });
     } else {
-
         const alignmentSelect = listaAlignment.value;
         if (radioGenderMale.checked){
             genderSelect = radioGenderMale.value;
